@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distracted Driver Detection App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .jumbotron p {
+            font-size: 20px;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            margin: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+            color: white;
+        }
+
+        .info-section {
+            padding: 40px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .info-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #343a40;
+        }
+
+        .info-section p {
+            font-size: 18px;
+            color: #6c757d;
+        }
+
+        .topic-section {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+        .topic-section h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .card {
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Distracted Driver Detection</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/upload">Upload Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/distracted-driver-detection" target="_blank">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://opensource.distracted-driver-detection" target="_blank">Project</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1>Welcome to Distracted Driver Detection</h1>
+            <p>This app helps identify distracted driving behavior using Deep learning model.</p>
+            <a href="/upload" class="btn btn-lg btn-custom">Upload Image</a>
+            <a href="/upload_video" class="btn btn-lg btn-custom">Upload Video</a>
+            <a href="https://opensource.distracted-driver-detection" class="btn btn-lg btn-custom" target="_blank">Learn More</a>
+        </div>
+    </div>
+    <div class="info-section">
+        <div class="container">
+            <h2>What is Distracted Driving?</h2>
+            <p>
+                Distracted driving occurs when a driver engages in any activity that diverts their attention from the road. 
+                This can include texting, eating, talking to passengers, or adjusting in-car systems, leading to potentially dangerous situations.
+            </p>
+            <p>
+                With the rise of smart systems, detecting distracted driving using deep learning models can help reduce accidents and save lives.
+            </p>
+        </div>
+    </div>
+    <div class="topic-section">
+        <div class="container">
+            <h3>Learn More About Driver Monitoring Systems</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">How Driver Monitoring Works</h4>
+                            <p class="card-text">
+                                Driver monitoring systems use sensors and cameras to track the driver’s face, eye movements, and behavior, 
+                                detecting signs of distraction or drowsiness in real-time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Improving Detection Accuracy</h4>
+                            <p class="card-text">
+                                Accuracy in detecting distracted driving can be improved using AI models trained with diverse datasets, 
+                                capturing a wide range of driver behaviors and environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Applications of Driver Monitoring</h4>
+                            <p class="card-text">
+                                Driver monitoring is widely used in advanced driver-assistance systems (ADAS), fleet management, and road safety initiatives, 
+                                making roads safer for all.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Powered by Flask and Deep Learning | &copy; 2024 Distracted Driver Detection App</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
