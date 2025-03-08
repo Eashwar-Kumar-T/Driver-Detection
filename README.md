@@ -1,4 +1,4 @@
-# Driver Activity Detection
+# Driver Behavior Detection
 
 ## Overview
 This project is a **Flask-based web application** that detects driver activities from images and videos using a **deep learning model**. It helps in identifying distracted driving behaviors, improving road safety.
