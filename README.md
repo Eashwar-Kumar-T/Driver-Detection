@@ -95,7 +95,3 @@ For deployment on a cloud platform (e.g., AWS, Heroku):
 
 ## License
 This project is open-source and available for modification and distribution.
-
----
-**Author**: Your Name  
-**Contact**: your.email@example.com
